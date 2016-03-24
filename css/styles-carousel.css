@@ -1,0 +1,56 @@
+/* developed by http://www.yanajy.com */
+
+.b-carousel   {
+	width: 948px; /* ширина всего блока */
+	margin: 20px auto;
+}
+
+.b-carousel1{
+width: 573px;
+margin: 20px auto;
+}
+ .h-carousel-wrapper1{
+width: 577px;
+position: relative;
+overflow: hidden;
+margin: 0 auto;
+}
+	.h-carousel-wrapper {
+		width: 887px; /* ширина области карусели */
+		position: relative;
+		overflow: hidden; /* скрываем содержимое, выходящее за рамки основной области */
+		margin: 0 auto; /* выравниваем по центру относительно родительского блока */
+	}
+		.h-carousel-items, .h-carousel-items1 {
+			width: 10000px; /* устанавливаем большую ширину для набора элементов карусели, чтобы в неё всё поместилось */
+			position: relative; /* позиционируем блок относительно основной области карусели */
+		}
+			.b-carousel-block, .b-carousel-block1 {
+				float: left; /* выстраиваем все элементы карусели в ряд */
+				
+			}
+		.b-carousel-block1	{width: 581px;}
+				.a-carousel-image-link, .a-carousel-image-link1 { /* тут чисто оформление содержимого */
+					display: block;
+					
+				
+					overflow: hidden;
+					
+				}
+	.b-carousel-button-left, .b-carousel-button-right, .b-carousel-button-left1, .b-carousel-button-right1 {
+width: 57px;
+height: 57px;
+position: absolute;
+cursor: pointer;
+	}
+
+	.b-carousel-button-left, .b-carousel-button-left1 {
+		background: url(../images/strelka1.png);
+left: -30px;
+top: 118px;
+	}
+	.b-carousel-button-right, .b-carousel-button-right1{
+		background: url(../images/strelka.png);
+right: -30px;
+top: 118px;
+	}.b-carousel-button-left1, .b-carousel-button-right1	{top: 178px;}

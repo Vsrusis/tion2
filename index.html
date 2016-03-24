@@ -1,0 +1,562 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="shortcut icon" href="/home/nskklining/domains/xn----btbcwcbcnwkb1adgee6fsd.xn--p1ai/favicon.ico"type="image/x-icon">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+        <title>Клининговая компания</title>
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow|Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="css/styles-carousel.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/carousel.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">$('a.fb').fancybox();</script>
+<link rel="stylesheet" type="text/css" href="js/jquery.fancybox.css" media="screen" />
+    <script>
+	$(document).ready(function() { 
+$("header nav a").click(function() {
+  
+                var href=$(this).attr("href");
+   if($(href).position())
+   { var height=$("header").height();
+    $("html, body").animate({scrollTop: $(href).position().top - height}, 500);
+    return false;
+   }
+  
+ });});
+       
+         </script>  
+
+		<script>
+$(document).ready(function () {
+	$('.flexslider').flexslider({
+		animation: 'fade',
+		controlsContainer: '.flexslider', directionNav: false,
+	});
+});
+	 
+</script>  	
+
+
+<link href="css/style.css" type="text/css" rel="stylesheet">
+        <link href="css/lightbox.css" type="text/css" rel="stylesheet">
+              <script type="text/javascript" src="js/jquery.aw-showcase.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+              <script type="text/javascript" src="js/lightbox.js"></script>
+        <script type="text/javascript" src="js/jquery.bpopup.min.js"></script>
+        <script type="text/javascript" src="js/jquery.countdown.js"></script>
+ <script type="text/javascript" src="js/myscripts.js"></script>
+        <script type="text/javascript">
+
+            $(function(){
+                $('.close').click(function(){
+                    $('.popup_modal').bPopup().close();
+                });
+            });
+
+            $(function(){
+                $('#py_1').click(function(){
+                    $('#py_1_modal').bPopup({
+                        easing: 'easeOutBack', //uses jQuery easing plugin
+                        speed: 650,
+                        transition: 'slideDown'
+                    });
+                });
+                $('#py_2').click(function(){
+                    $('#py_2_modal').bPopup({
+                        easing: 'easeOutBack', //uses jQuery easing plugin
+                        speed: 650,
+                        transition: 'slideDown'
+                    });
+                });
+                $('#py_2').click(function(){
+                    $('#py_2_modal').bPopup({
+                        easing: 'easeOutBack', //uses jQuery easing plugin
+                        speed: 650,
+                        transition: 'slideDown'
+                    });
+                });
+                $('#py_3').click(function(){
+                    $('#py_3_modal').bPopup({
+                        easing: 'easeOutBack', //uses jQuery easing plugin
+                        speed: 650,
+                        transition: 'slideDown'
+                    });
+                });
+                $('#cro_1').click(function(){
+                    $('#cro_1_modal').bPopup({
+                        easing: 'easeOutBack', //uses jQuery easing plugin
+                        speed: 650,
+                        transition: 'slideDown'
+                    });
+                });
+                $('#cro_2').click(function(){
+                    $('#cro_2_modal').bPopup({
+                        easing: 'easeOutBack', //uses jQuery easing plugin
+                        speed: 650,
+                        transition: 'slideDown'
+                    });
+                });
+                $('#cro_3').click(function(){
+                    $('#cro_3_modal').bPopup({
+                        easing: 'easeOutBack', //uses jQuery easing plugin
+                        speed: 650,
+                        transition: 'slideDown'
+                    });
+                });
+                $('#skat_1').click(function(){
+                    $('#skat_1_modal').bPopup({
+                        easing: 'easeOutBack', //uses jQuery easing plugin
+                        speed: 650,
+                        transition: 'slideDown'
+                    });
+                });
+                $('#skat_2').click(function(){
+                    $('#skat_2_modal').bPopup({
+                        easing: 'easeOutBack', //uses jQuery easing plugin
+                        speed: 650,
+                        transition: 'slideDown'
+                    });
+                });
+                $('#skat_3').click(function(){
+                    $('#skat_3_modal').bPopup({
+                        easing: 'easeOutBack', //uses jQuery easing plugin
+                        speed: 650,
+                        transition: 'slideDown'
+                    });
+                });
+                $('#snake_1').click(function(){
+                    $('#snake_1_modal').bPopup({
+                        easing: 'easeOutBack', //uses jQuery easing plugin
+                        speed: 650,
+                        transition: 'slideDown'
+                    });
+                });
+                $('#snake_2').click(function(){
+                    $('#snake_2_modal').bPopup({
+                        easing: 'easeOutBack', //uses jQuery easing plugin
+                        speed: 650,
+                        transition: 'slideDown'
+                    });
+                });
+                $('#snake_3').click(function(){
+                    $('#snake_3_modal').bPopup({
+                        easing: 'easeOutBack', //uses jQuery easing plugin
+                        speed: 650,
+                        transition: 'slideDown'
+                    });
+                });
+                $('.show_modal').click(function(){
+                    $('#form_modals').bPopup({
+                        speed: 650,
+                        transition: 'slideIn'
+                    });
+                });
+                $('.go_see_more').click(function(){
+                    $('#form_modals_see_more').bPopup({
+                        speed: 650,
+                        transition: 'slideIn'
+                    });
+                });
+                $('body').delegate('form', 'submit', function(e) {
+                    var $form=$(this);
+                    $.ajax($form.attr('action'), {
+                        type:$form.attr('method'),
+                        data: $form.serialize(),
+                        success:function (data){
+                            $('#message').html(data);
+                            $('#message').bPopup({
+                                speed: 650,
+                                transition: 'slideIn'
+                            });
+                        }
+                    });
+
+                    return false;
+                });
+            });
+        </script>
+
+    </head>
+	
+    <header id="hed">
+        <div class="container">
+      			<nav>
+			<a href="#hed">Главная</a><span>|</span>   
+			
+			<a href="#models">Услуги</a><span>|</span>   
+			<a href="#about">схема работы</a><span>|</span>   
+			<a href="#his">Наши клиенты</a><span>|</span>     
+			<a href="#benefits1">Преимущества</a><span>|</span>    
+			<a href="#reviews">Отзывы</a><span>|</span>   
+			<a href="#primer">Контакты</a> 
+			</nav>
+            <div id="info">
+                
+                <h3>8 999 <span>999-99-99</span></h3>
+                <a href="#top_call" id="top_call_p" class="script_help show_modal ex_hover">Заказать звонок</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="main_form" style="z-index: 99999;">
+					   <div class="form1" style="
+    background-image: url(images/for.png);
+    background-repeat: no-repeat;
+    width: 295px;
+    height: 349px; text-align: center; margin-top: 59px; float: right; z-index: 9999; position: absolute;
+right: 0;
+">
+<h4 style="
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 40px;
+    font-size: 32px;
+    line-height: 30px;
+">Расчет<br>стоимости</h4>
+<p style="
+    color: #fff;
+    font-size: 20px; margin-bottom: 9px;
+">позвоните нам или оставьте заявку на консультацию</p>
+               
+                <form action="sendMessage.php" method="post">
+                    <input type="text" name="name" placeholder="НАПРИМЕР: Иван" aria-describedby="name-format" required="">
+                    <input type="text" name="phone" placeholder="НАПРИМЕР: +7 (999) 999-99-99" aria-describedby="name-format" required="">
+                    <input type="submit" name="phone" value="Заказать" class="ex_hover script_help" style="bottom: 0px;">
+                </form>
+      
+          
+        </div>	
+		
+       </div>  
+	   <div class="flexslider">
+    <ul class="slides">
+				
+				<li><img src="images/1.jpg" alt="" /></li>
+<li><img src="images/2.jpg" alt="" /></li>
+				<li><img src="images/3.jpg" alt="" /></li>
+				<li><img src="images/4.jpg" alt="" /></li>
+				<li><img src="images/5.jpg" alt="" /></li>
+						
+			</ul>
+			
+		</div>
+		<div class="zak">
+			<a href="#top_call" id="top_call_p" class="script_help show_modal ex_hover">Заказать</a>
+		</div>
+	
+	   
+
+<div id="rayban">        <div class="container">                   
+                           
+                    <p>Оперативный выезд специалистов</p>
+					<p>Более 100 сотрудников в штате</p>
+				<p>Оплата после работы </p>
+  </div>
+ </div>
+
+    <div id="models">
+        <div class="container">
+                   <h3>Наши услуги</h3>
+		            <div class="span3 fc">
+                				<div class="tbloc">
+                <img src="images/Cat/1.png"/> 
+				<span>от <b>25</b> руб. кв/м</span>
+				</div>
+				<p>Уборка офисов и жилых<br>помещений</p>
+                <a href="#top_call" class="script_help show_modal ex_hover btn">Заказать</a>
+            </div>
+            <div class="span3">
+                				<div class="tbloc">
+                <img src="images/1.png"/><span>от <b>150</b> руб. створка</span></div>
+				<p>Мойка окон, балконов,<br>витражей</p>
+                <a href="#top_call" class="script_help show_modal ex_hover btn">Заказать</a>
+            </div>
+            <div class="span3 lc">
+               <div class="tbloc">
+                 <img src="images/Cat/3.png"/><span>от <b>35</b> руб. кв/м</span></div>
+				  <p>Мойка<br>фасадов</p>
+                <a href="#top_call" class="script_help show_modal ex_hover btn">Заказать</a>
+            </div>
+			<div style="clear:both;height: 10px;"></div>
+            <div class="span3 fc">
+                <div class="tbloc">
+               <img src="images/Cat/4.png"/><span>от <b>40</b> руб. кв/м</span></div>
+			   <p>Послестроительная<br>уборка</p>
+                <a href="#top_call" class="script_help show_modal ex_hover btn">Заказать</a>
+            </div>
+                          <div class="span3">
+                <div class="tbloc">
+                 <img src="images/Cat/5.png"/><span>от <b>60</b> руб. кв/м</span>
+				 </div>
+				 <p>Чистка штор,<br>жалюзи</p>
+                <a href="#top_call" class="script_help show_modal ex_hover btn">Заказать</a>
+            </div>
+            <div class="span3 lc">
+               <div class="tbloc">
+                <img src="images/Cat/6.png"/><span>от <b>150</b> руб. кв/м</span></div>
+				 <p>Чистка натяжных<br>потолков</p>
+                <a href="#top_call" class="script_help show_modal ex_hover btn">Заказать</a>
+            </div>
+			<div style="clear:both;height: 10px;"></div>
+            <div class="span3 fc">
+               <div class="tbloc">
+                 <img src="images/Cat/7.png"/><span>от <b>20</b> руб. кв/м</span></div>
+				  <p>Стрижка и уход<br>за газоном</p>
+                <a href="#top_call" class="script_help show_modal ex_hover btn">заказать</a>
+            </div>
+		            <div class="span3">
+              <div class="tbloc">
+                <img src="images/Cat/8.png"/><span>от <b>40</b> руб. кв/м</span></div>
+				  <p>Чистка ковров и<br>ковролина</p>
+                <a href="#top_call" class="script_help show_modal ex_hover btn">Заказать</a>
+				</div>
+				<div class="span3 lc">
+                <div class="tbloc">
+                <img src="images/Cat/9.png"/><span>расчитывается<br>индивидуально</span></div>
+				<p>Чистка<br>парогенератором</p>
+                <a href="#top_call" class="script_help show_modal ex_hover btn">Заказать</a>
+            </div>
+        </div>
+    </div>
+	    <div id="benefits">
+        <div class="container">
+	
+            <h3>Нужна индивидуальная услуга?</h3>
+<p class="beni">Позвоните нам или закажите обратный звонок и наш специалист проконсультирует Вас!</p>
+                       
+            <div class="vedro">
+                <img src="images/ben1.png" style="margin-right: 15px"/>
+            </div>
+            	 <div class="form">
+                 
+                
+                    <form action="sendMessage.php" method="post" >
+                        <input type="text" name="name" placeholder="ИМЯ" aria-describedby="name-format" required>
+                        <input type="text" name="phone" placeholder="ТЕЛЕФОН" aria-describedby="name-format" required>
+                   <span class="ph1">8 999 <b>999-99-99</b></span>     <input type="submit" name="phone" value="Получить консультацию" class="ex_hover script_help">
+                    </form>
+                   
+                </div>
+            
+       
+        </div>
+    </div>
+
+				
+    <div id="about">
+        <div class="container">
+		  <h3>Схема работы с нами</h3>
+		     <div class="span4">
+                <img src="images/kak1.png"/>
+				<img class="stre" src="images/strelka.png"/>
+				<p>Оставляете заявку</p>
+				<a href="#top_call" class="script_help show_modal ex_hover btn">Оставить заявку</a>
+            </div>    	
+ <div class="span4">
+			<img src="images/kak2.png"/>
+			<img class="stre" src="images/strelka.png"/>
+                <p>Консультация специалиста<br>Выбираете время уборки</p>
+            </div>
+            <div class="span4">
+			<img src="images/kak3.png"/>
+			<img class="stre" src="images/strelka.png"/>
+                <p>Мы производим<br>уборку</p>
+            </div>
+            <div class="span4">
+			<img src="images/kak4.png"/>
+                <p>Вы проверяете работу<br>и вносите оплату</p>
+            </div>
+          
+        </div>
+    </div>
+
+    
+    <div id="his">
+	        <div class="container">
+            <h3>Наши клиенты</b></h3>
+ <div class="b-carousel"> 
+			<div class="b-carousel-button-left"></div> 
+		<div class="b-carousel-button-right"></div> 
+				<div class="h-carousel-wrapper">
+			<div class="h-carousel-items">
+			<div class="b-carousel-block"><img src="images/slide1.png" alt="" /></div>
+			<div class="b-carousel-block"><img src="images/slide2.png" alt="" /></div>
+			<div class="b-carousel-block"><img src="images/slide3.png" alt="" /></div>
+			<div class="b-carousel-block"><img src="images/slide4.png" alt="" /></div>
+			<div class="b-carousel-block"><img src="images/slide5.png" alt="" /></div>
+			<div class="b-carousel-block"><img src="images/slide6.png" alt="" /></div>
+			<div class="b-carousel-block"> <img src="images/slide7.png" alt="" /></div>
+							</div>
+		</div>
+		
+	</div>           
+        </div>
+    </div>
+	    <div id="benefits1">
+        <div class="container">
+	              <img src="images/poc.png" alt="" />          
+                                  </div>
+                  
+        </div>
+    </div>
+		
+    <div id="reviews">
+        <div class="container">
+            <h3>Наши клиенты о нас</h3>
+        <div class="rew1">  
+ <div class="b-carousel1"> 
+			<div class="b-carousel-button-left1"></div> 
+		<div class="b-carousel-button-right1"></div> 
+				<div class="h-carousel-wrapper1">
+			<div class="h-carousel-items1">
+			<div class="b-carousel-block1">		<div class="review">
+                <img src="images/ot3.png"/>
+                <div class="main"> 
+                    <p><b>Иван Иванов</b> | г. Новосибирск</p>
+                    <p class="text">
+				Заказала уборку квартиры у компании Нск-Клининг. В кротчайшие сроки произвели оценку объёма работ и уже через несколько дней ко мне приехали работники.
+За время сотрудничества компания проявила себя ответственным партнёром, добросовестно выполняющим свою работу. В доме ещё более уютно, светло и чисто!!!
+Спасибо вам за вашу работу!</p>
+                </div>
+            </div>
+            <div class="review">
+                <img src="images/ot2.png"/>
+                <div class="main">
+                    <p><b>Олег Олегович</b> | г. Новосибирск</p>
+                    <p class="text">
+					Заказывал уборку и мытьё окон в офисе после ремонта.
+Бригада приехала вовремя, уборку произвели довольно быстро. Только хорошие впечатления.</p>
+                </div>
+            </div></div>
+			<div class="b-carousel-block1">		<div class="review">
+                <img src="images/ot1.png"/>
+                <div class="main"> 
+                    <p><b>Дмитрий Дмитриевич</b> | г. Новосибирск</p>
+                    <p class="text">
+				Обратились в клининговую компанию Нск-Клининг для уборки квартиры после ремонта. Нужно было в максимально короткие сроки произвести уборку. Не ожидал таких результатов, т.к раньше считал это бесполезным и доверия к таким компаниям особо не было. В работе замечаний не возникло, всем доволен. Буду обращаться и дальше. Спасибо!</p>
+                </div>
+            </div>
+            <div class="review">
+                <img src="images/ot4.png"/>
+                <div class="main">
+                    <p><b>Марина Сергеевна</b> | г. Новосибирск</p>
+                    <p class="text">
+					Спасибо компании Нск клининг за качественно проведённую работу (чистка дивана). Внимательные, вежливые сотрудники компании.ТАК ДЕРЖАТЬ)</p>
+                     </div>
+                 </div>	
+			  </div>
+		  </div>
+		</div>
+    </div>     
+ </div>
+		 <div class="rew2">  
+		 <h4>Благодарственные письма</h4>
+<a class="fb" title="Благодарственное письмо" href="images/ser/1.JPG">
+ <img src="images/ser/1.JPG" alt="Благодарственное письмо" width="100" height="150" />
+</a>
+<a class="fb" title="Благодарственное письмо" href="images/ser/2.JPG">
+ <img src="images/ser/2.JPG" alt="Благодарственное письмо" width="100" height="150" />
+</a>
+<a class="fb" title="Благодарственное письмо" href="images/ser/3.jpg">
+ <img src="images/ser/3.jpg" alt="Благодарственное письмо" width="100" height="150" />
+</a>
+<a class="fb" title="Благодарственное письмо" href="images/ser/4.jpg">
+ <img src="images/ser/4.jpg" alt="Благодарственное письмо" width="100" height="150" />
+</a>
+<a class="fb" title="Благодарственное письмо" href="images/ser/5.jpg">
+ <img src="images/ser/5.jpg" alt="Благодарственное письмо" width="100" height="150" />
+</a>
+<a class="fb" title="Благодарственное письмо" href="images/ser/6.jpg">
+ <img src="images/ser/6.jpg" alt="Благодарственное письмо" width="100" height="150" />
+</a>
+		 
+		</div>
+		
+		</div>
+		
+    </div>
+	
+	
+	
+		    <div id="benefits2">
+        <div class="container">
+	
+            <h3>Остались вопросы? Звони!</h3>
+<p class="beni">Позвоните нам или закажите обратный звонок и наш специалист проконсультирует Вас!</p>
+                       
+            <div class="vedro">
+                <img src="images/ben1.png" style="margin-right: 15px"/>
+            </div>
+            	 <div class="form">
+                 
+                
+                    <form action="sendMessage.php" method="post" >
+                        <input type="text" name="name" placeholder="ИМЯ" aria-describedby="name-format" required>
+                        <input type="text" name="phone" placeholder="ТЕЛЕФОН" aria-describedby="name-format" required>
+                   <span class="ph1">8 999 <b>999-99-99</b></span>     <input type="submit" name="phone" value="Получить консультацию" class="ex_hover script_help">
+                    </form>  
+                </div>
+   
+        </div>
+    </div>
+	
+    <div id="primer">
+       
+    </div>
+
+    <footer>
+        <div class="container">
+            <div id="logo">
+                <a href="/"> <img src="images/logo.png" alt="Солнцезащитные очки Ray-Ban в Новосибирске!"/></a>
+				<p>Клининговая компания</p>
+            </div>
+            <div id="info">
+                
+                <h3>8 999 <span>999-99-99</span></h3>
+                <a href="#top_call" id="top_call_p" class="script_help show_modal ex_hover">Заказать звонок</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Модальные форм -->
+    <div class="popup_modal" id="form_modals">
+        <h1 id="script_help" style="display: none;"></h1>
+       
+<div class="form1" style="
+    background-image: url(images/for.png);
+    background-repeat: no-repeat;
+    width: 295px;
+    height: 349px;
+">
+<h4 style="
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 40px;
+    font-size: 32px;
+    line-height: 30px;
+">Расчет<br>стоимости</h4>
+<p style="
+    color: #fff;
+    font-size: 20px; margin-bottom: 9px;
+">позвоните нам или оставьте заявку на консультацию</p>
+               
+                <form action="sendMessage.php" method="post">
+                    <input type="text" name="name" placeholder="НАПРИМЕР: Иван" aria-describedby="name-format" required="">
+                    <input type="text" name="phone" placeholder="НАПРИМЕР: +7 (999) 999-99-99" aria-describedby="name-format" required="">
+                    <input type="submit" name="phone" value="Заказать" class="ex_hover script_help" style="bottom: 0px;">
+                </form>
+      
+          
+        </div>
+    </div>
+    <div class="popup_modal" id="message">
+
+    </div>
+
+</div>
+
+</body>
+</html>
